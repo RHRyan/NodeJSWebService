@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CRUD de Recordatorios</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>CRUD de Recordatorios</h1>
+
+  <form id="recordatorio-form">
+    <label for="fecha">Fecha:</label>
+    <input type="date" id="fecha" name="fecha" required>
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="descripcion">Descripción:</label>
+    <textarea id="descripcion" name="descripcion" required></textarea>
+
+    <label for="categoria">Categoría:</label>
+    <input type="text" id="categoria" name="categoria" required>
+
+    <button type="submit">Agregar</button>
+  </form>
+
+  <table id="recordatorios-table">
+    <thead>
+      <tr>
+        <th>Fecha</th>
+        <th>Nombre</th>
+        <th>Descripción</th>
+        <th>Categoría</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="recordatorios-body">
+    </tbody>
+  </table>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+GET http://localhost:9000/api/recordatorios
+
+###
+
+POST http://localhost:9000/api/recordatorios
+Content-Type: application/json
+
+{
+  "Fecha": "2023-07-15",
+  "Nombre": "Recordatorio 2",
+  "Descripcion": "Descripción del recordatorio 2",
+  "Categoria": "Trabajo y tarea "
+}
+
+###
+
+DELETE http://localhost:9000/api/recordatorios/1
+
+###
+
+PUT http://localhost:9000/api/recordatorios/2
+Content-Type: application/json
+
+{
+  "Fecha": "2023-07-16",
+  "Nombre": "Recordatorio modificado",
+  "Descripcion": "Descripción modificada",
+  "Categoria": "Personal"
+}
