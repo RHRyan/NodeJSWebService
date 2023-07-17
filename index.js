@@ -2,6 +2,8 @@ const express = require('express');
 const mysql = require('mysql');
 const myconn = require('express-myconnection');
 const recordatoriosRoutes = require('./routes/recordatorios');
+const signupRoutes = require('./routes/signup');
+const loginRoutes = require('./routes/login');
 const path = require('path');
 
 const app = express();
@@ -28,6 +30,8 @@ app.get('/', (req, res) => {
 });
 
 app.use('/api/recordatorios', recordatoriosRoutes);
+app.use('/api/signup', signupRoutes);
+app.use('/api/login', loginRoutes);
 
 // Start server
 app.listen(port, () => {
